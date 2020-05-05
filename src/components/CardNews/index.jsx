@@ -22,10 +22,21 @@ import {
 } from './styles';
 
 const CardNews = ({
-  item: { title, editorial, provider, thumbnail, pubDate, canal, canalLogo },
+  item: { title, editorial, provider, thumbnail, pubDate, canal, canalLogo, link },
+  openLink,
 }) => (
   <View style={styles.surface}>
-    <CardContent>
+    <CardContent
+      onPress={() =>
+        openLink({
+          link,
+          color: colors[provider],
+          canal,
+          canalLogo:
+            canalLogo ||
+            'https://oplanetatv.clickgratis.com.br/_upload/content/2019/01/14/saiba-quais-as-series-a-tv-globo-produzira-em-2019-5c3c7004a1060_featured.jpg',
+        })
+      }>
       <CardHeader>
         <Assunto color={colors[provider]}>{editorial || canal}</Assunto>
         <Categorias color={colors[provider]}>{provider}</Categorias>
@@ -76,8 +87,10 @@ CardNews.propTypes = {
     provider: PropTypes.string.isRequired,
     canal: PropTypes.string.isRequired,
     canalLogo: PropTypes.string,
+    link: PropTypes.string,
     thumbnail: PropTypes.oneOfType([PropTypes.any, PropTypes.string]),
   }),
+  openLink: PropTypes.func,
 };
 
 export default React.memo(CardNews);

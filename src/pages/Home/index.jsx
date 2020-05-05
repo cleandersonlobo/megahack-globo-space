@@ -12,10 +12,12 @@ import TabBarCategoria from './TabBarCategoria';
 import { styles } from './styles';
 import TabBarStories from './components/TabBarStories';
 import EditarFavoritos from './components/EditarFavoritos';
+import { useNavigation } from '@react-navigation/native';
 import { useCategoriasSpace } from 'hooks';
 
 const Home = () => {
   const sheetRef = React.createRef();
+  const navigation = useNavigation();
   const { categoriasRoutes, categoriasOpcoes } = useCategoriasSpace();
   const [nextSnapTo, setSnap] = useState(1);
   const [routes, setRoutes] = useState({
@@ -28,8 +30,11 @@ const Home = () => {
   }
 
   const renderContent = () => {
-
     return <EditarFavoritos data={categoriasOpcoes} />
+  }
+
+  function handleOpenLink(values) {
+    navigation.navigate('WebPage', values);
   }
 
   const handleShowBottomSheet = useCallback(() => {
@@ -61,8 +66,8 @@ const Home = () => {
         ListHeaderComponent={route.key === 'Meu Espaço' ? TabBarStories : null}
         initialNumToRender={1}
         useNativeDriver
-        keyExtractor={(item) => item.title}
-        renderItem={({ item }) => <CardNews item={item} route={route} />}
+        keyExtractor={(item, index) => `news-${index}-${item.pubDate}`}
+        renderItem={({ item }) => <CardNews item={item} route={route} openLink={handleOpenLink} />}
       />
     );
   }, []);

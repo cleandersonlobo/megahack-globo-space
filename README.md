@@ -14,16 +14,25 @@
 </p>
 
 ##  **Splash**
+
 ![App-demo](./screenshot/tela1.jpg)
 
 ##  **Meu Espaço**
 ### Espaço com conteudo que o usuário está seguindo
+
 ![App-demo](./screenshot/meu-espaco.jpg)
 
+##  **WebView**
+
+![App-demo](./screenshot/noticias.jpg)
+
+
 ##  **Favoritos**
+
 ![App-demo](./screenshot/favoritos.jpg)
 
 ##  **Seguindo**
+
 ![App-demo](./screenshot/seguindo.jpg)
  
 

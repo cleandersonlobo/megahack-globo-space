@@ -11,8 +11,14 @@
   <p>
 </p>
 
-### Dependencies
+##  Meu Espaço
+![App-demo](./screenshot/meu-espaco.png)
 
+##  Favoritos
+![App-demo](./screenshot/favoritos.png)
+
+##  Seguindo
+![App-demo](./screenshot/seguindo.png)
  
  ## Get Started
  

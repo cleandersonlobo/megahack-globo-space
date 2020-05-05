@@ -1,4 +1,4 @@
-import './src/config/reactotron/reactotron';
+import 'react-native-gesture-handler';
 import React, { Component } from 'react';
 import { StatusBar, Platform } from 'react-native';
 import { Provider } from 'react-redux';

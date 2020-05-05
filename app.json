@@ -1,31 +1,37 @@
 {
+  "name": "GloboSpace",
+  "displayName": "GloboSpace",
+  "expo": {
     "name": "GloboSpace",
-    "displayName": "GloboSpace",
-    "expo": {
-        "name": "GloboSpace",
-        "slug": "GloboSpace",
-        "privacy": "unlisted",
-        "sdkVersion": "37.0.0",
-        "version": "1.0.0",
-        "entryPoint": "node_modules/expo/AppEntry.js",
-        "platforms": [
-            "ios",
-            "android",
-            "web"
-        ],
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "supportsTablet": true
-        },
-        "splash": {
-            "backgroundColor": "#6041A5",
-            "image": "./assets/images/logo_globo.png",
-            "resizeMode": "native"
-        }
+    "slug": "globo-space",
+    "privacy": "unlisted",
+    "sdkVersion": "37.0.0",
+    "version": "1.0.0",
+    "description": "Projeto desenvolvido como solução do Mega Hack 2° Edição - Desafio Globo",
+    "githubUrl": "https://github.com/cleandersonlobo/megahack-globo-space",
+    "orientation": "portrait",
+    "entryPoint": "node_modules/expo/AppEntry.js",
+    "icon": "./assets/images/icon-ios.png",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "backgroundColor": "#6041A5",
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "icon": "./assets/images/icon-ios.png"
+    },
+    "splash": {
+      "backgroundColor": "#6041A5",
+      "image": "./assets/images/logo_globo.png",
+      "resizeMode": "contain"
     }
+  }
 }

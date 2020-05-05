@@ -39,7 +39,7 @@ const enhancer = __DEV__
 const store = createStore(persistedReducer, enhancer);
 
 //
-reactotron.setReduxStore(store);
+if (__DEV__) reactotron.setReduxStore(store);
 const persistor = persistStore(store);
 sagaMiddleware.run(rootSaga);
 export { store, persistor };

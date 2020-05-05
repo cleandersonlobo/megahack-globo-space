@@ -1,6 +1,8 @@
 import React, { useCallback, useState } from 'react';
 import { FlatList, Dimensions, Platform, View } from 'react-native';
 import { TabView } from 'react-native-tab-view';
+import { gestureHandlerRootHOC } from 'react-native-gesture-handler'
+
 import BottomSheet from 'reanimated-bottom-sheet';
 import { CardNews, Loading } from 'components';
 import { ContainerSafe } from 'styles/ui';
@@ -76,23 +78,22 @@ const Home = () => {
         onOpenEnd={onOpenStart}
         onCloseStart={onCloseStart}
       />
-    <ContainerSafe>
-      <TabView
-        style={styles.tabView}
-        navigationState={routes}
-        renderScene={renderScene}
-        onIndexChange={handleOnChangeIndex}
-        renderTabBar={renderTab}
-        renderLazyPlaceholder={() => <Loading />}
-        initialLayout={{ width: fullWidth }}
-        useNativeDriver
-        lazy
-        removeClippedSubviews={Platform.OS === 'android'}
-      />
-    </ContainerSafe>
-
+      <ContainerSafe>
+        <TabView
+          style={styles.tabView}
+          navigationState={routes}
+          renderScene={renderScene}
+          onIndexChange={handleOnChangeIndex}
+          renderTabBar={renderTab}
+          renderLazyPlaceholder={() => <Loading />}
+          initialLayout={{ width: fullWidth }}
+          useNativeDriver
+          lazy
+          removeClippedSubviews={Platform.OS === 'android'}
+        />
+      </ContainerSafe>
     </>
   );
 };
 
-export default Home;
+export default gestureHandlerRootHOC(Home);

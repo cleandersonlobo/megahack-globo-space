@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import Icon from 'react-native-vector-icons/Feather';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Loading } from 'components';
+import { SplashAppScreen } from 'components';
 import { navigationRef } from './RootNavigation';
 
 const Home = React.lazy(() => import('../pages/Home'));
@@ -15,7 +15,7 @@ const Tab = createBottomTabNavigator();
 export default function AppNavigator() {
   return (
     <SafeAreaProvider>
-      <React.Suspense fallback={<Loading />}>
+      <React.Suspense fallback={<SplashAppScreen />}>
         <NavigationContainer ref={navigationRef}>
           <Tab.Navigator
             headerMode="none"

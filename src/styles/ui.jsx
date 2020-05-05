@@ -15,6 +15,6 @@ export const TitlePage = styled.Text`
   font-weight: 800;
   color: ${colors.dark};
   opacity: 0.9;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   margin-bottom: 15px;
 `;

@@ -32,8 +32,8 @@ export const styles = StyleSheet.create({
   },
   text: {
     color: colors.white,
+    fontFamily: 'Ubuntu-Bold',
     fontSize: 12,
-    fontWeight: '800',
     textTransform: 'uppercase',
   },
 });

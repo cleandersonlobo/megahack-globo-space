@@ -32,7 +32,7 @@ export const styles = StyleSheet.create({
 export const Assunto = styled.Text`
   text-align: left;
   letter-spacing: 0.45px;
-  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
   color: ${colors.dark};
   opacity: 0.6;
   font-size: 10px;
@@ -44,7 +44,7 @@ export const Categorias = styled.Text`
   opacity: 0.9;
   margin-bottom: 15px;
   text-align: left;
-  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
   color: ${(props) => props.color || colors.dark};
   font-size: 10px;
   margin-bottom: 5px;
@@ -52,7 +52,7 @@ export const Categorias = styled.Text`
 
 export const Atualizado = styled.Text`
   text-align: left;
-  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
   color: ${colors.dark};
   opacity: 0.6;
   font-size: 10px;
@@ -69,7 +69,7 @@ export const CanalLogo = styled.Image`
 export const Canal = styled.Text`
   font-size: 12px;
   letter-spacing: 0.4px
-  font-weight: 800;
+  font-family: 'Ubuntu-Bold';
   color: ${colors.dark};
   opacity: 1;
 `;
@@ -78,7 +78,7 @@ export const Titulo = styled.Text`
   letter-spacing: 0.4px;
   font-size: 18px;
   line-height: 26px;
-  font-weight: 700;
+  font-family: 'Ubuntu-Bold';
   padding-right: 15px;
   margin-bottom: 10px;
 `;

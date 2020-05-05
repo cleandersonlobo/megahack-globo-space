@@ -30,17 +30,15 @@ export const styles = StyleSheet.create({
 export const Header = styled.View`
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 5px;
   flex-direction: row;
   align-items: center;
-  height: 45px;
   padding-bottom: 15px;
   justify-content: space-between;
 `;
 
 export const ButtonBack = styled.TouchableOpacity`
   flex: 1;
-  width: 50px;
-  height: 50px;
   justify-content: center;
   align-items: flex-start;
 `;
@@ -51,11 +49,10 @@ export const Button = styled.TouchableOpacity`
   align-items: center;
 `;
 
-export const ContentUrl = styled.Text`
-  flex: 2;
+export const ContentUrl = styled.View`
+  flex: 9;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
 `;
 
 export const ContentRight = styled.Text`
@@ -63,9 +60,18 @@ export const ContentRight = styled.Text`
 `;
 
 export const Url = styled.Text`
-  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
   text-align: center;
   color: ${colors.dark};
+`;
+
+export const TextInputUrl = styled.TextInput`
+  padding: 10px;
+  font-family: 'Ubuntu-Medium';
+  background-color: #eee;
+  border-radius: 10px;
+  color: ${colors.dark};
+  opacity: 0.7;
 `;
 
 export const CanalLogo = styled.Image`
@@ -78,7 +84,7 @@ export const CanalLogo = styled.Image`
 export const CanalTexto = styled.Text`
   font-size: 12px;
   letter-spacing: 0.4px
-  font-weight: 800;
+  font-family: 'Ubuntu-Bold';
   color: ${colors.dark};
   opacity: 1;
 `;

@@ -7,9 +7,8 @@ import { fullWidth, ContainerSafe } from 'styles';
 import {
   styles,
   Header,
-  ContentRight,
   ContentUrl,
-  Url,
+  TextInputUrl,
   ButtonBack,
   Button,
   CanalLogo,
@@ -32,9 +31,8 @@ const WebPage = ({ navigation, route }) => {
             <Icon name="arrow-left-circle" color="#000" size={30} />
           </ButtonBack>
           <ContentUrl>
-            <Url numberOfLines={0}>{link}</Url>
+            <TextInputUrl value={link} />
           </ContentUrl>
-          <ContentRight />
         </Header>
         {progress < 1 && <View style={[styles.progress, { width: fullWidth * progress }]} />}
       </View>

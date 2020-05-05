@@ -12,9 +12,8 @@ export const Text = styled.Text`
 
 export const TitlePage = styled.Text`
   font-size: 24px;
-  font-weight: 800;
+  font-family: 'Ubuntu-Bold';
   color: ${colors.dark};
   opacity: 0.9;
-  letter-spacing: 0.6px;
   margin-bottom: 15px;
 `;

@@ -36,6 +36,6 @@ export const styles = StyleSheet.create({
 
 export const Text = styled.Text`
   font-size: 10px;
-  font-weight: bold;
+  font-family: 'Ubuntu-Bold';
   text-align: center;
 `;

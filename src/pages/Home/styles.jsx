@@ -5,7 +5,12 @@ import colors from 'styles/colors';
 
 const { width } = Dimensions.get('window');
 export const styles = StyleSheet.create({
-  button: { alignItems: 'center', justifyContent: 'center', minWidth: 30, top: 7 },
+  button: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    minWidth: 30,
+    top: 7,
+  },
   contentButton: {
     backgroundColor: '#ffffff',
     height: 48,
@@ -53,6 +58,6 @@ export const TextTab = styled.Text`
   line-height: 16px;
   height: 16px;
   opacity: ${(props) => (props.focused ? 1 : 0.6)};
-  font-weight: 700;
+  font-family: 'Ubuntu-Bold';
   text-align: center;
 `;

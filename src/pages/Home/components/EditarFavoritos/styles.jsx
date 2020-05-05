@@ -23,8 +23,8 @@ export const styles = StyleSheet.create({
   },
   texto: {
     color: colors.dark,
+    fontFamily: 'Ubuntu-Medium',
     fontSize: 24,
-    fontWeight: 'bold',
     opacity: 0.8,
   },
 });
